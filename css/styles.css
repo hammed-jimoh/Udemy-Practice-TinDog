@@ -34,10 +34,11 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* navigation bar */
+
 .navbar {
   padding-bottom: 4.5rem;
 }
@@ -57,19 +58,27 @@ body {
 }
 
 /* Download buttons */
+
 .download-buttons {
   margin: 5% 3% 5% 0;
 }
 
 /* title image */
+
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  /* position: absolute; */
+  /* z-index: -1; */
 }
 
 /* features section */
+
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  /* z-index: 1; */
 }
 
 .feature-box {
@@ -87,6 +96,7 @@ body {
 }
 
 /* testimonial section */
+
 #testimonials {
   text-align: center;
   background-color: #ef8172;
@@ -100,6 +110,7 @@ body {
 }
 
 /* press section */
+
 #press {
   background-color: #ef8172;
   text-align: center;
@@ -116,6 +127,7 @@ body {
 }
 
 /* pricing section */
+
 #pricing {
   padding: 100px;
   text-align: center;
@@ -127,4 +139,40 @@ body {
 
 .pricing-column {
   padding: 3% 3%;
+}
+
+@media (max-width: 1028px) {
+
+  .title-img {
+    width: 40%;
+    transform: rotate(0);
+    position: static;
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+/* call to action section */
+
+#cta {
+  background-color: #FF4c68;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* footer section */
+
+#footer {
+  text-align: center;
+  padding: 40px;
+  color: #8f8f8f;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.bot-link {
+  margin: 10px 5px;
 }
